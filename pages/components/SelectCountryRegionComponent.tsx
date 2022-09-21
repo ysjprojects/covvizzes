@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Row, Col } from 'reactstrap';
 
 type scProps = {
     changeHandler: (s: string) => void
@@ -16,14 +17,23 @@ const SelectCountryRegion = ({ countries, setCountryRegionSelected }: { countrie
         setCountryRegionSelected(event.target.value);
     }
     return (
-        <select onChange={change} value={selected} className="form-select" name="select" id="countryregionselection">
-            <option value="World">World</option>
-            {countries.filter((x) => x !== 'World').map((c) => {
-                return (
-                    <option value={c}>{c}</option>
-                )
-            })}
-        </select>
+        <Row className="py-3">
+
+            <Col className="form-group">
+                <label className="text-light fw-bold" htmlFor="countryregionselection">Select Country/Region:</label>
+                <br />
+                <select onChange={change} value={selected} className="w-auto form-control form-select" name="select" id="countryregionselection">
+                    <option value="World">World</option>
+                    {countries.filter((x) => x !== 'World').map((c) => {
+                        return (
+                            <option value={c}>{c}</option>
+                        )
+                    })}
+                </select>
+            </Col>
+
+        </Row>
+
     )
 }
 

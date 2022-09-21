@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import {
     Collapse,
     Navbar,
@@ -7,11 +8,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
 } from 'reactstrap';
 
 const Navigation = () => {
@@ -22,29 +18,22 @@ const Navigation = () => {
     return (
         <div style={{ height: '56px' }}>
             <Navbar color='dark' dark={true} fixed="top" expand="md" container="lg">
-                <NavbarBrand href="/">Covvizzes</NavbarBrand>
+                <NavbarBrand href="/"><img
+                    style={{ height: 40, width: 40, marginRight: 15 }}
+                    alt="logo"
+                    src="/assets/covvizzes.png"
+                /></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">About</NavLink>
+                            <NavLink href="/about">About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            <NavLink href="/services/api">
                                 API
                             </NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Connect
-                            </DropdownToggle>
-                            <DropdownMenu end>
-                                <DropdownItem>Option 1</DropdownItem>
-                                <DropdownItem>Option 2</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>Reset</DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
             </Navbar>

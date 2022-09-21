@@ -143,7 +143,7 @@ const initChart = (option: number, casesData: CasesData[], vaccinesData: Vaccine
         }).filter((r) => r.value !== null))
     } else if ([4, 5, 6].includes(option)) {
         bubbleSeries.data.setAll((d as VaccinesData[]).filter((c) => c['Country/Region'] in toISO2 && c['Province/State'] === 'Total').map((c) => {
-            const f = field as 'Doses Administered' | 'People Partially Vaccinated' | 'People Fully_Vaccinated'
+            const f = field as 'Doses Administered' | 'People Partially Vaccinated' | 'People Fully Vaccinated'
             return (
                 {
                     id: toISO2[c['Country/Region']],
