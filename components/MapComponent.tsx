@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState, useRef } from "react";
-import { VaccinesData, CasesData } from "../../utils/types";
+import { VaccinesData, CasesData } from "../utils/types";
 import { Card } from 'reactstrap';
-import { toISO2 } from "../../utils/helpers";
+import { toISO2 } from "../utils/helpers";
 
 import * as am5 from '@amcharts/amcharts5';
 import * as am5map from '@amcharts/amcharts5/map'

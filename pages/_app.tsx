@@ -7,7 +7,7 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Navigation from './components/NavigationComponent';
+import Navigation from '../components/NavigationComponent';
 
 
 

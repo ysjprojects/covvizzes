@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Api from '../components/ApiComponent'
+import Api from '../../components/ApiComponent'
 
 const Home: NextPage = () => {
     return (

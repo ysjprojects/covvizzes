@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardBody, Row, Col, CardFooter } from 'reactstrap';
-import { VaccinesData } from '../../utils/types';
-import { numberToText } from '../../utils/helpers';
+import { VaccinesData } from '../utils/types';
+import { numberToText } from '../utils/helpers';
 
 
 

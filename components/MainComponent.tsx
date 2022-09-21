@@ -6,7 +6,7 @@ import SelectCountryRegion from "./SelectCountryRegionComponent";
 import axios from "axios"
 import useSWR from "swr"
 
-import { CasesData } from "../../utils/types";
+import { CasesData } from "../utils/types";
 import SummaryCardCases from "./SummaryCardCasesComponent";
 import SummaryCardVaccines from "./SummaryCardVaccinesComponent";
 import TimeSeries from "./TimeSeriesComponent";

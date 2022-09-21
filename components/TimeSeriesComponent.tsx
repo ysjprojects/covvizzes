@@ -6,7 +6,7 @@ import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 import useSWR from "swr";
 var classnames = require('classnames')
 import axios from 'axios'
-import { TVPair } from "../../utils/types";
+import { TVPair } from "../utils/types";
 
 const splitDate = (date: string) => {
     let [month, day, year]: string[] = date.split("/")

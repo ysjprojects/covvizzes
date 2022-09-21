@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { CasesData, TableData, VaccinesData } from "../../utils/types";
+import { CasesData, TableData, VaccinesData } from "../utils/types";
 import MUIDataTable from 'mui-datatables';
 
 
