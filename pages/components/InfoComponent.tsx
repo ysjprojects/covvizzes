@@ -20,7 +20,7 @@ const Info = () => {
                 </div>
                 <h5 className="text-muted"><b>Covvizzes</b> is built with NextJS, Bootstrap and Amcharts.</h5>
                 <h5 className="text-muted"><b>Covvizzes</b> fetches data from John Hopkin's University and transforms it into an interactive covid-19 dashboard.</h5>
-                <h5 className="text-muted"><b>Covvizzes</b> provides a free, rate-limited <a href="/services/api" target="_blank">REST API service</a>!</h5>
+                <h5 className="text-muted"><b>Covvizzes</b> provides a free, rate-limited <a href="/services/api" target="_blank" rel="noreferrer">REST API service</a>!</h5>
             </Row>
             <Row className="mt-5 text-start">
                 <Col md={6}>
@@ -42,17 +42,17 @@ const Info = () => {
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-info">
                             <FontAwesomeIcon icon={faGlobe} />
-                        </button> <a className="mt-2" href="http://www.sjyu.xyz/" target="_blank"> Website</a>
+                        </button> <a className="mt-2" href="http://www.sjyu.xyz/" target="_blank" rel="noreferrer"> Website</a>
                     </h5>
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-primary">
                             <FontAwesomeIcon icon={faLinkedinIn} />
-                        </button>                 <a className="mt-2" href="https://www.linkedin.com/in/yu-shi-jie-b8a36b129/" target="_blank"> LinkedIn</a>
+                        </button>                 <a className="mt-2" href="https://www.linkedin.com/in/yu-shi-jie-b8a36b129/" target="_blank" rel="noreferrer"> LinkedIn</a>
                     </h5>
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-primary">
                             <FontAwesomeIcon icon={faGithub} />
-                        </button>                 <a className="mt-2" href="https://github.com/ysjprojects/" target="_blank"> Github</a>
+                        </button>                 <a className="mt-2" href="https://github.com/ysjprojects/" target="_blank" rel="noreferrer"> Github</a>
                     </h5>
 
                 </Col>

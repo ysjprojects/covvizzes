@@ -26,7 +26,7 @@ const SelectCountryRegion = ({ countries, setCountryRegionSelected }: { countrie
                     <option value="World">World</option>
                     {countries.filter((x) => x !== 'World').map((c) => {
                         return (
-                            <option value={c}>{c}</option>
+                            <option key={c} value={c}>{c}</option>
                         )
                     })}
                 </select>

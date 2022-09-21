@@ -67,7 +67,7 @@ const RenderApiCard = ({ desc, endpoint, params }: { desc: string, endpoint: str
             <hr />
             <Card className="ps-0">
                 <CardBody>
-                    <Button style={{ width: "75px" }} color="success"><a className="text-light text-decoration-none" href={"/api" + endpoint} target="_blank"><b>GET</b></a></Button>
+                    <Button style={{ width: "75px" }} color="success"><a className="text-light text-decoration-none" href={"/api" + endpoint} target="_blank" rel="noreferrer"><b>GET</b></a></Button>
 
                     <span className="api-url"><b>&nbsp;&nbsp;&nbsp;{endpoint}</b> <i><b>?{params.join('&')}</b></i></span>
                 </CardBody>
@@ -84,12 +84,12 @@ const ApiInfo = () => {
                 <h1 className="text-center"><b>Covvizzes REST API</b></h1>
             </Row>
             <Row className="text-start">
-                <h5>Base URL: <a href="https://covvizzes.sjyu.xyz/api" target="_blank">https://covvizzes.sjyu.xyz/api</a></h5>
+                <h5>Base URL: <a href="https://covvizzes.sjyu.xyz/api" target="_blank" rel="noreferrer">https://covvizzes.sjyu.xyz/api</a></h5>
 
             </Row>
 
             <Row className="text-start">
-                <h5>Data Source: <a href="https://github.com/ysjprojects/covid19-json-data" target="_blank">https://github.com/ysjprojects/covid19-json-data</a></h5>
+                <h5>Data Source: <a href="https://github.com/ysjprojects/covid19-json-data" target="_blank" rel="noreferrer">https://github.com/ysjprojects/covid19-json-data</a></h5>
 
             </Row>
             <Row className="text-start">
