@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import {
     Collapse,
     Navbar,
@@ -16,7 +15,7 @@ const Navigation = () => {
 
 
     return (
-        <div style={{ height: '56px' }}>
+        <div style={{ height: '66px' }}>
             <Navbar color='dark' dark={true} fixed="top" expand="md" container="lg">
                 <NavbarBrand href="/"><img
                     style={{ height: 40, width: 40, marginRight: 15 }}

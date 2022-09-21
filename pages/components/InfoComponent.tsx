@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Info = () => {
     return (
@@ -41,17 +42,17 @@ const Info = () => {
                     </h3>
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-info">
-                            <FontAwesomeIcon icon={faGlobe} />
+                            <FontAwesomeIcon icon={faGlobe as IconProp} />
                         </button> <a className="mt-2" href="http://www.sjyu.xyz/" target="_blank" rel="noreferrer"> Website</a>
                     </h5>
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-primary">
-                            <FontAwesomeIcon icon={faLinkedinIn} />
+                            <FontAwesomeIcon icon={faLinkedinIn as IconProp} />
                         </button>                 <a className="mt-2" href="https://www.linkedin.com/in/yu-shi-jie-b8a36b129/" target="_blank" rel="noreferrer"> LinkedIn</a>
                     </h5>
                     <h5 className="">
                         <button className=" mt-2 me-3 btn btn-lg rounded btn-primary">
-                            <FontAwesomeIcon icon={faGithub} />
+                            <FontAwesomeIcon icon={faGithub as IconProp} />
                         </button>                 <a className="mt-2" href="https://github.com/ysjprojects/" target="_blank" rel="noreferrer"> Github</a>
                     </h5>
 
